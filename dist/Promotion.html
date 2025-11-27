@@ -1,0 +1,358 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Система повышения - Дыхание Змеи</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* ТЕ ЖЕ СТИЛИ ЧТО И В index.html */
+        body {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            color: #fff;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .navbar-brand {
+            font-weight: 800;
+            font-size: 1.5rem;
+        }
+
+        .nav-link {
+            font-size: 1.1rem;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+            color: white !important;
+        }
+
+            .nav-link:hover {
+                color: #20c997 !important;
+            }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+            .card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 25px rgba(32, 201, 151, 0.2);
+            }
+
+        .bg-success {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%) !important;
+        }
+
+        .bg-info {
+            background: linear-gradient(135deg, #17a2b8 0%, #20c997 100%) !important;
+        }
+
+        .bg-warning {
+            background: linear-gradient(135deg, #ffc107 0%, #fd7e14 100%) !important;
+        }
+
+        .bg-danger {
+            background: linear-gradient(135deg, #dc3545 0%, #fd7e14 100%) !important;
+        }
+
+        .bg-purple {
+            background: linear-gradient(135deg, #6f42c1 0%, #d63384 100%) !important;
+        }
+
+        .bg-dark {
+            background: rgba(30, 30, 30, 0.95) !important;
+            backdrop-filter: blur(10px);
+            border: 1px solid #333;
+        }
+
+        .text-success {
+            color: #20c997 !important;
+            text-shadow: 0 0 15px rgba(32, 201, 151, 0.7);
+        }
+
+        .text-warning {
+            color: #ffc107 !important;
+        }
+
+        .text-danger {
+            color: #dc3545 !important;
+        }
+
+        .text-purple {
+            color: #6f42c1 !important;
+            text-shadow: 0 0 15px rgba(111, 66, 193, 0.7);
+        }
+
+        .text-info {
+            color: #17a2b8 !important;
+        }
+
+        .display-4 {
+            font-weight: 800;
+            background: linear-gradient(45deg, #20c997, #28a745);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 30px rgba(32, 201, 151, 0.5);
+        }
+
+        .lead {
+            color: #ccc;
+            font-size: 1.3rem;
+        }
+
+        .card-header {
+            border-bottom: 2px solid rgba(255,255,255,0.1);
+            font-weight: 600;
+        }
+
+        .footer {
+            background: rgba(20, 20, 20, 0.9) !important;
+        }
+
+        .list-unstyled li {
+            padding: 8px 0;
+            font-size: 1.1rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+            .list-unstyled li:last-child {
+                border-bottom: none;
+            }
+    </style>
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">🐍 Дыхание Змеи</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">🏠 Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Promotion.html">📈 Система повышения</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Основное содержимое -->
+    <div class="container mt-5">
+        <!-- Заголовок -->
+        <header class="text-center mb-5">
+            <h1 class="display-4 text-warning fw-bold">⚔️ Система повышения</h1>
+            <p class="lead">Путь от начинающего истребителя до Цугуко</p>
+        </header>
+
+        <!-- Общая информация -->
+        <section class="row mb-5">
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-white text-center">
+                    <div class="card-body">
+                        <h3>🕒 Время повышения</h3>
+                        <p class="mb-1">Младший состав: <span class="text-info">3 дня</span></p>
+                        <p class="mb-1">Средний состав: <span class="text-info">4 дня</span></p>
+                        <p class="mb-0">Старший состав: <span class="text-info">5 дней</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card bg-dark text-white">
+                    <div class="card-body">
+                        <h3>📋 Условия повышения</h3>
+                        <p>
+                            Каждый ранг требует выполнения определенных заданий и демонстрации роста навыков.
+                            Время от подачи заявки до получения нового звания зависит от состава.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Младший состав -->
+        <section class="mb-5">
+            <h2 class="text-info mb-4"> Младший состав (КД: 3 дня)</h2>
+
+            <!-- Мидузното → Мидзуноэ -->
+            <div class="card bg-dark text-white mb-4">
+                <div class="card-header bg-info">
+                    <h4 class="mb-0">Мидузното → Мидзуноэ</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mb-0">
+                        <li>✅ Выполнить поручение от инструктора</li>
+                        <li>✅ Убийство 3 демонов</li>
+                        <li>✅ Участие в 1 тренировке</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Мидзуноэ → Каното -->
+            <div class="card bg-dark text-white mb-4">
+                <div class="card-header bg-info">
+                    <h4 class="mb-0">Мидзуноэ → Каното</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mb-0">
+                        <li>✅ Убийство 5 демонов</li>
+                        <li>✅ Участие в 2 тренировках</li>
+                        <li>✅ Выполнить 1 поручение от Цугуко/Инструктора</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Каното → Каноэ -->
+            <div class="card bg-dark text-white mb-4">
+                <div class="card-header bg-info">
+                    <h4 class="mb-0">Каното → Каноэ</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mb-0">
+                        <li>✅ Отработай свои удары (15 рп действий)</li>
+                        <li>✅ Убийство 7 демонов</li>
+                        <li>✅ Участие в 2 тренировках</li>
+                        <li>✅ Пройти проверку устава у Цугуко/Инструктора</li>
+                        <li>✅ Выполнить 1 поручение от Цугуко/инструктора</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Средний состав -->
+        <section class="mb-5">
+            <h2 class="text-warning mb-4"> Средний состав (КД: 4 дня)</h2>
+
+            <!-- Каноэ → Цучиното -->
+            <div class="card bg-dark text-white mb-4">
+                <div class="card-header bg-warning">
+                    <h4 class="mb-0">Каноэ → Цучиното</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mb-0">
+                        <li>✅ Вызови истребителя на дуэль и победи</li>
+                        <li>✅ Убийство 10 демонов</li>
+                        <li>✅ Участие в 2 тренировках</li>
+                        <li>✅ Выполнить 2 поручения от Цугуко/Инструктора</li>
+                        <li>✅ Участие в 1 рп событии</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Цучиното → Цучиноэ -->
+            <div class="card bg-dark text-white mb-4">
+                <div class="card-header bg-warning">
+                    <h4 class="mb-0">Цучиното → Цучиноэ</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mb-0">
+                        <li>✅ Убийство 10 демонов</li>
+                        <li>✅ Провести спаринг с истребителем твоего ранга и выше</li>
+                        <li>✅ Выполнить 2 поручения от Цугуко/Инструктора</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Цучиноэ → Хиното -->
+            <div class="card bg-dark text-white mb-4">
+                <div class="card-header bg-warning">
+                    <h4 class="mb-0">Цучиноэ → Хиното</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mb-0">
+                        <li>✅ Выполнить задание от члена поместья бабочки</li>
+                        <li>✅ Убийство 15 демонов</li>
+                        <li>✅ Выполнить личное задание от любого из столпов</li>
+                        <li>✅ Участие в 2 рп событиях</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Хиното → Хиноэ -->
+            <div class="card bg-dark text-white mb-4">
+                <div class="card-header bg-warning">
+                    <h4 class="mb-0">Хиното → Хиноэ</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mb-0">
+                        <li>✅ Участие в 3 рп событиях</li>
+                        <li>✅ Принять участие в охоте на 3 низших лун</li>
+                        <li>✅ Победи в дуэли Цугуко/инструктора</li>
+                        <li>✅ Получи одобрение от своего столпа на повышение</li>
+                        <li>✅ Пройди полное обследование в поместье бабочки</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Старший состав -->
+        <section class="mb-5">
+            <h2 class="text-danger mb-4"> Старший состав (КД: 5 дней)</h2>
+
+            <!-- Хиноэ → Киното -->
+            <div class="card bg-dark text-white mb-4">
+                <div class="card-header bg-danger">
+                    <h4 class="mb-0">Хиноэ → Киното</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mb-0">
+                        <li>✅ Участие в 3 рп событиях</li>
+                        <li>✅ Брось вызов на дуэль любому истребителю выше тебя рангом</li>
+                        <li>✅ Получи рекомендацию от 1 любого столпа</li>
+                        <li>✅ Пройти полный осмотр в поместье бабочки</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Киното → Киноэ -->
+            <div class="card bg-dark text-white mb-4">
+                <div class="card-header bg-danger">
+                    <h4 class="mb-0">Киното → Киноэ</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mb-0">
+                        <li>✅ Участие в 4 рп событиях</li>
+                        <li>✅ Брось вызов на дуэль Цугуко/Инструктору любого из дыханий</li>
+                        <li>✅ Получи одобрение от своего столпа на повышение</li>
+                        <li>✅ Выполни поручение от 3 столпов</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Киноэ → Цугуко -->
+            <div class="card bg-dark text-white mb-4">
+                <div class="card-header bg-purple">
+                    <h4 class="mb-0">Киноэ → Цугуко</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mb-0">
+                        <li>✅ Пройти тест на знание устава от Обаная</li>
+                        <li>✅ Провести патруль деревень</li>
+                        <li>✅ Принять участие в 5 тренировках</li>
+                        <li>✅ Победить Обаная в тренировочном спарринге</li>
+                        <li>✅ Убить высшую луну</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Подвал -->
+    <footer class="border-top footer text-muted mt-5">
+        <div class="container">
+            &copy; 2025 - Дыхание Змеи
+        </div>
+    </footer>
+
+    <!-- Скрипты -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

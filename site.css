@@ -1,0 +1,82 @@
+/* Общие стили */
+body {
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    color: #fff;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Навигация */
+.navbar-brand {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+    .nav-link:hover {
+        color: #20c997 !important;
+    }
+
+/* Карточки */
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(32, 201, 151, 0.2);
+    }
+
+/* Цвета */
+.bg-success {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%) !important;
+}
+
+.bg-dark {
+    background: rgba(30, 30, 30, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid #333;
+}
+
+/* Текст */
+.text-success {
+    color: #20c997 !important;
+    text-shadow: 0 0 15px rgba(32, 201, 151, 0.7);
+}
+
+.display-4 {
+    font-weight: 800;
+    background: linear-gradient(45deg, #20c997, #28a745);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 30px rgba(32, 201, 151, 0.5);
+}
+
+.lead {
+    color: #ccc;
+    font-size: 1.3rem;
+}
+
+/* Заголовки карточек */
+.card-header {
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+    font-weight: 600;
+}
+
+/* Подвал */
+.footer {
+    background: rgba(20, 20, 20, 0.9) !important;
+}
+
+/* Контейнер */
+.container {
+    background: transparent;
+}
